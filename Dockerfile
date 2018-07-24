@@ -13,3 +13,4 @@ ENV PULSE_SERVER /run/pulse/native
 WORKDIR /home/parsec
 
 COPY ./rootfs /
+CMD ["/usr/local/bin/parsec"]
