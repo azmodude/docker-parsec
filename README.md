@@ -6,7 +6,7 @@ following.
 
 ### Usage
 
-``` {.bash}
+``` {.console}
 docker run --rm --name parsec --hostname parsec \
     -e USER_UID=${USER_UID} \
     -e USER_GID=${USER_GID} \
