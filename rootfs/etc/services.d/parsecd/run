@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv /bin/bash
+
+gosu parsec bash -c '/usr/bin/parsecd'
+
