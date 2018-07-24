@@ -1,8 +1,7 @@
 ## docker-parsec
 
-A docker image including [Parsec](https://www.parsecgaming.com). Full
-hardware-acceleration is only tested on Intel chips for now, NVIDIA
-following.
+A docker image including [Parsec](https://www.parsecgaming.com). Full hardware-acceleration is only tested on Intel
+chips for now, NVIDIA following.
 
 ### Usage
 
@@ -24,15 +23,10 @@ following.
     current UID/GID on the host.
 -   `VIDEO_GID` is required to allow `/dev/dri` access.
 
-Parsec configuration is stored in a named volume `parsec_home` so saved
-logins can persist.
+Parsec configuration is stored in a named volume `parsec_home` so saved logins can persist.
 
-You also need to allow the container to access your X socket using
-`xhost`.
+You also need to allow the container to access your X socket using `xhost`.
 
-There is a
-[Makefile](https://github.com/azmodude/docker-parsec/blob/master/Makefile)
-included in the [GitHub
-repository](https://github.com/azmodude/docker-parsec) that tries to
-take care of setting all environment variables and X authentication when
-invoked with `make run`.
+There is a [Makefile](https://github.com/azmodude/docker-parsec/blob/master/Makefile) included in the
+[GitHub repository](https://github.com/azmodude/docker-parsec) that tries to take care of setting all environment
+variables and X authentication when invoked with `make run`.
