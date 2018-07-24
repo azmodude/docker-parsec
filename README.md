@@ -1,6 +1,6 @@
 ## docker-parsec
 
-A docker image including [parsec](https://www.parsecgaming.com). Full hardware-acceleration is only tested on Intel
+A docker image including [Parsec](https://www.parsecgaming.com). Full hardware-acceleration is only tested on Intel
 chips for now, NVIDIA following.
 
 ### Usage
