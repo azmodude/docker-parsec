@@ -1,4 +1,5 @@
 IMAGE := azmo/parsec
+
 USER_UID := $(shell id -u)
 USER_GID := $(shell id -g)
 VIDEO_GID := $(shell echo $(shell getent group video) | cut -d: -f3)
