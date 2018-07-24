@@ -9,7 +9,7 @@ useradd -c 'Parsec Run User' -s /bin/bash -m -u "${USER_UID}" \
 (groupmod -g "${USER_GID}" users && usermod -g users parsec) > /dev/null
 >&2 echo "[${me}] Adding parsec to video group ${VIDEO_GID}."
 (groupmod -g "${VIDEO_GID}" video && gpasswd -a parsec video) > /dev/null
->&2 echo -n "[${me}] Fixing permissions to possibly changed UID/GID of "
->&2 echo "${USER_UID}/${USER_GID} combination."
+>&2 echo -n "[${me}] Fixing permissions to possibly changed UID/GID "
+>&2 echo "combination of ${USER_UID}/${USER_GID}."
 chown -R "${USER_UID}":"${USER_GID}" /home/parsec
 
